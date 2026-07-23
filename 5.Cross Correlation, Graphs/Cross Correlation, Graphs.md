@@ -76,6 +76,6 @@ DFS runtime：
 ## 边的分类
 $e=(u,v)$
 - Tree edge：$e\in \text{DFS tree}$
-- Back edge：顶点$u$是DFS树中$v$的后代
-- Forward edge：顶点$u$是$v$的祖先，且$(u,v)$不是Tree edge
+- Back edge：顶点$u$是DFS树中$v$的后代（D-A）
+- Forward edge：顶点$u$是$v$的祖先，且$(u,v)$不是Tree edge（A-F）
 - Cross edge：其他的所有边
