@@ -67,4 +67,7 @@ while !isEmpty(Q):
 			push(v)
 ```
  ![[ec1c519e55c272cd56b2b03a8c59dba1.jpg]]
+我们要访问每个节点，同时也要走每个节点相连的边，所以运行时间为$\Theta(m+n)$
+
 **补充**：对于一些特殊结构的图，比如Social Network，我们可以使用这些图特有的最短路径算法
+#最短路径 #图 #BFS #强联通分量 #DAG 
