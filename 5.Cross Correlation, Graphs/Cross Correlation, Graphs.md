@@ -20,7 +20,7 @@ $$
 (X'Y)(z)=\underbrace{(x_{m-1}y_0)}_{下标差为m-1}z^0+\underbrace{(x_{m-1}y_1+x_{m-2}y_0)}_{下标差为m-2}z+...+\underbrace{(x_0y_0+x_1y_1+...+x_{m-1}y_{m-1})}_{下标差为0}z^{m-1}+...
 $$
 我们从$m-1$次项以后的系数里就可以提取到我们需要的Cross Correlation的形式
-#字符串匹配 #FFT #多项式乘法 #字符串相似度
+#字符串匹配 #FFT #多项式乘法 #字符串相似度 #快速傅里叶变换
 # Graph
 ***记号约定：$n$总是表示顶点数量，$m$总是表示边的数量***
 本节的内容均在Match仓库的MIT 6.042J的图论部分中
@@ -79,3 +79,4 @@ $e=(u,v)$
 - Back edge：顶点$u$是DFS树中$v$的后代（D-A）
 - Forward edge：顶点$u$是$v$的祖先，且$(u,v)$不是Tree edge（A-F）
 - Cross edge：其他的所有边
+#图 #DFS

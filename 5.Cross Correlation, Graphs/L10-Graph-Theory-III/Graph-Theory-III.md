@@ -3,7 +3,7 @@
 **定理**：一个连通图具有Euler tour当且仅当每个顶点的度数为偶数
 >Proof.
 >充分性：**我们允许存在重复的顶点，那么一个Euler tour一定可以表示为如下形式**：
->![[Pasted image 20260609165842.png|145]]
+>![[CS170/5.Cross Correlation, Graphs/L10-Graph-Theory-III/Pic/Pasted image 20260609165842.png|145]]
 >显然，这个图中每个顶点的度都是2（假设全部无重），所以，任意一个顶点的度等于他在图中出现的次数乘以2，所以每个顶点的度数为偶数
 >必要性：
 >设$W: v_0-v_1-\ldots-v_k$是**最长**的**无重边**Walk（常用于图论的证明），我们证明其为Euler tour
@@ -14,7 +14,7 @@
 >
 >假设$W$不是一个Euler tour，意味着存在一条边不在$W$中，但是由于连通性，这个顶点一定连接到$W$中的一个顶点中，记该边为$u-v_i$，我们只要从$u$开始行走，最后回到$v_i$，我们就得到了一条更长的$W':u-v_i-v_{i-1}-...-v_k-v_0-v_i$，矛盾！
 # Directed Graph(digraphs)
-![[Pasted image 20260609200544.png|150]]
+![[CS170/5.Cross Correlation, Graphs/L10-Graph-Theory-III/Pic/Pasted image 20260609200544.png|150]]
 **定义1**：进入顶点的边数称为入度
 **定义2**：从某一个顶点出去的边数称为出度
 **定义3**：一个图$G=(V,E)$的**邻接矩阵**$A\in \{0,1\}$定义为$A_{ij}=1$，当且仅当$v_i,v_j$相邻
@@ -31,7 +31,7 @@
 **定义5**：如果有向图G没有有向环，其被称为**有向无环图(DAG)**，
 ## Tournament Graph
 使用有向边表示一个队伍打败一个队伍，如果$u$打败了$v$，那么$u\to v$
-![[Pasted image 20260609203342.png|279]]
+![[CS170/5.Cross Correlation, Graphs/L10-Graph-Theory-III/Pic/Pasted image 20260609203342.png|279]]
 **定义6**：**Hamiltonian路径**是一条访问每个顶点恰好一次的有向路径
 **定理**：每个竞赛图都存在一个哈密顿路径
 >Proof.

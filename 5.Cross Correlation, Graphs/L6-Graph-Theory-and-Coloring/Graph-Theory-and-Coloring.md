@@ -8,12 +8,12 @@
 定义6：如果点集$V$可以被划分为两个集合$V_L,V_R$，使得所有的边都是$V_L$中的节点连接到$V_R$中的节点的边，称这个图为二分图
 ## Example
 男性平均异性伴侣数量和女性的比较
-![[Pasted image 20260602092309.png|573]]
+![[CS170/5.Cross Correlation, Graphs/L6-Graph-Theory-and-Coloring/Pic/Pasted image 20260602092309.png|573]]
 我们记平均度数为：$A_m=|\bar{E_m}|=|E|/|V_m|$和$A_w=|\bar{E_w}|=|E|/|V_w|$，需要求出$A_m/A_w$
 直接代入，消掉$|E|$，算出$A_m/A_w\approx3\%$
 
 考试安排(Graph Coloring)
-![[Pasted image 20260602093330.png|244]]
+![[CS170/5.Cross Correlation, Graphs/L6-Graph-Theory-and-Coloring/Pic/Pasted image 20260602093330.png|244]]
 两个课程之间连有边，代表两门课有学生同时选择，不能同一时间考试
 假设我们有五个时间段$C_1,\ldots,C_5$用于考试，如何使用最少的时间段用于考试——3种
 ## Graph Coloring

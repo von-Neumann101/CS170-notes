@@ -4,12 +4,12 @@
 ![[1d886f77bc7ed389eb635cca64e7000b.jpg|250]]
 # Find Shortest Paths
 ## 概览
-对于无权图，可以使用BFS(Breath First Search)，以$O(m+n)$得到最短路径
+对于无权图，可以使用**BFS**(Breath First Search)，以$O(m+n)$得到最短路径
 对于有权图：
-如果权重大于0，可以使用Dijkstra算法，以$O((m+n)\log n)$得到最短路径
+如果权重大于0，可以使用**Dijkstra算法**，以$O((m+n)\log n)$得到最短路径
 如果权重小于0（在金融领域使用，比如正权重花钱，正权重赚钱），这会非常复杂
 ![[3e3e076ef0b7eabe6265ce3407e32e66.jpg|193]]这称为负环(negative cycle)，$u\to v$的最短路径不存在
-Bellman-Ford算法，以$O(mn)$得到最短路径或指明存在负环
+**Bellman-Ford算法**，以$O(mn)$得到最短路径或指明存在负环
 
 如果我们把图限制为DAG，我们能以$O(m+n)$的复杂度得到最短路径
 ## DFS
