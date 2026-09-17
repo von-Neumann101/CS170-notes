@@ -29,3 +29,26 @@ Huffman树有一个简单的性质，把**所有**节点（频率）加起来，
 
 贪心算法（只能得到近似解）：每一步选择覆盖更多**新元素**的子集$S_j$
 假设$|J|=k$，那么该算法得到的上界为$k\log n$，除非P=NP，否则这就是贪心能做到的最好结果
+**Alg**：
+$$
+\begin{aligned}
+&\textbf{Greedy}(S_1,\ldots,S_m):\\
+&A \gets \{1,\ldots,n\}
+\qquad \text{// uncovered elements}\\
+&B \gets \varnothing\\[2mm]
+&\textbf{while } A\neq\varnothing \textbf{ do}\\
+&\qquad
+j^* \gets \operatorname*{arg\,max}_{1\le j\le m}
+|A\cap S_j|\\
+&\qquad
+A \gets A\setminus S_{j^*}\\
+&\qquad
+B \gets B\cup\{j^*\}\\
+&\textbf{return } B
+\end{aligned}
+$$
+
+证明：对于每一次循环，$\exists S_q\subset V,\  |S_q\cap A|\ge \dfrac{|A|}{k}$（这是对于最优策略来说的，最优策略的其中一个覆盖能覆盖超过平均值的部分），由于贪心要选的最大覆盖大于等于最优策略里的覆盖，那么任何一次贪心策略都能（注意并不会选完，因为选过的基准（最优策略最大覆盖的）$|A\cap O_i|=0$，那么他就不会加入下一次循环的“基准”评判。也就是说，我们永远能选到大于当前$|A|$的$\frac1k$的覆盖）选到，由此得到不等式：
+$$
+|A_0|=n,|A_{t+1}|\le(1-\frac1k)|A_t|
+$$
